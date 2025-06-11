@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <style>
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                margin: auto;
+            }
+            h1 {
+                text-align: center;
+            }
+            #submit {
+                border-radius: 50px;
+                background-color: blue;
+                color: white;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>Contact Us</h1>
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Enter name" required /><br />
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter email" required /><br />
+            <label>Message:</label>
+            <textarea name="Message" rows="4" cols="20" required></textarea><br />
+            <input type="submit" value="Submit" id="submit"/>
+        </form>
+    </body>
+</html>
