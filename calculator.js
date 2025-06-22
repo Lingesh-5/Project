@@ -10,12 +10,18 @@ pEl.id = "description";
 pEl.innerText = "A calculator to perform basic arithmetic operations.";
 pEl.classList.add("text-center");
 
-
 const divEl = document.createElement("div");
 divEl.classList.add("container");
 divEl.classList.add("border");
 divEl.classList.add("border-dark-subtle");
-divEl.classList.add("text-center");
+divEl.classList.add("rounded");
+divEl.classList.add("bg-body-secondary");
+divEl.classList.add("p-3");
+divEl.classList.add("shadow");
+divEl.classList.add("d-flex");
+divEl.classList.add("flex-column");
+divEl.classList.add("h-25");
+divEl.classList.add("w-25");
 
 const divRowEl = document.createElement("div");
 divRowEl.classList.add("row");
@@ -44,7 +50,6 @@ divCol1El.classList.add("col");
 const buttonEl = document.createElement("button");
 buttonEl.classList.add("btn");
 buttonEl.classList.add("btn-outline-danger");
-buttonEl.style.borderColor = "white";
 buttonEl.innerText = "C";
 buttonEl.id = "clear";
 buttonEl.addEventListener("click", () => {
@@ -57,7 +62,6 @@ divCol2El.classList.add("col");
 const button1El = document.createElement("button");
 button1El.classList.add("btn");
 button1El.classList.add("btn-outline-primary");
-button1El.style.borderColor = "white";
 button1El.innerText = "%";
 button1El.addEventListener("click", (e) => {
   inputEl.value += e.target.innerText;
@@ -69,7 +73,6 @@ divCol3El.classList.add("col");
 const button2El = document.createElement("button");
 button2El.classList.add("btn");
 button2El.classList.add("btn-outline-primary");
-button2El.style.borderColor = "white";
 button2El.innerText = ".";
 button2El.addEventListener("click", (e) => {
   inputEl.value += e.target.innerText;
@@ -81,7 +84,6 @@ divCol4El.classList.add("col");
 const button3El = document.createElement("button");
 button3El.classList.add("btn");
 button3El.classList.add("btn-outline-primary");
-button3El.style.borderColor = "white";
 button3El.innerText = "x";
 button3El.addEventListener("click", (e) => {
   inputEl.value += e.target.innerText;
@@ -137,7 +139,6 @@ divCol8El.classList.add("col");
 const button7El = document.createElement("button");
 button7El.classList.add("btn");
 button7El.classList.add("btn-outline-primary");
-button7El.style.borderColor = "white";
 button7El.innerText = "/";
 button7El.addEventListener("click", (e) => {
   inputEl.value += e.target.innerText;
@@ -193,7 +194,6 @@ divCol12El.classList.add("col");
 const button11El = document.createElement("button");
 button11El.classList.add("btn");
 button11El.classList.add("btn-outline-primary");
-button11El.style.borderColor = "white";
 button11El.id ="subtract";
 button11El.innerText = "-";
 button11El.addEventListener("click", (e) => {
@@ -253,7 +253,6 @@ divCol16El.classList.add("col");
 const button15El = document.createElement("button");
 button15El.classList.add("btn");
 button15El.classList.add("btn-outline-primary");
-button15El.style.borderColor = "white";
 button15El.id ="add";
 button15El.innerText = "+";
 button15El.addEventListener("click", (e) => {
